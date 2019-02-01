@@ -1,10 +1,32 @@
 
 module.exports = {
     
+    inputKeys: ["inputTargetWidth", "inputTargetHeight"],
+    
+    attributes: {
+        "inputTargetWidth": {
+            displayName: "Width",
+            default: "228",
+            
+            // These two types are private, until I get a more public interface for defining a string.
+            type: "OTAttributeTypeString",
+            kOTInputKeyControllerClassName: "OTLineStringKeyController",
+        },
+        
+        "inputTargetHeight": {
+            displayName: "Height",
+            default: "160",
+            
+            // These two types are private, until I get a more public interface for defining a string.
+            type: "OTAttributeTypeString",
+            kOTInputKeyControllerClassName: "OTLineStringKeyController",
+        }
+    },
+    
     processAsset: function(document, rbnode, asset) {
         
-        var targetWidth = 228;
-        var targetHeight = 160;
+        var targetWidth = parseInt(rbnode.nodeValues().inputTargetWidth);
+        var targetHeight = parseInt(rbnode.nodeValues().inputTargetHeight);
         
         var ar = asset.imageWidth() / asset.imageHeight();
         var nr = targetWidth / targetHeight;
@@ -27,10 +49,8 @@ module.exports = {
         
         image = image.imageByCroppingToRect_(CGRectMake(0, 0, targetWidth, targetHeight))
         
-        
         asset.setCIImage(image);
         
-
         return true;
     },
     
