@@ -1,0 +1,6 @@
+{
+    "pluginName": "Match DPI To Width",
+    "description": "Changes the DPI of the image to match a certain width for printing.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js",
+}
