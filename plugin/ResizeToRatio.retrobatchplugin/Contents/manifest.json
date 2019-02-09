@@ -1,6 +1,6 @@
 {
     "pluginName": "Resize To Ratio",
-    "description": "228/160.",
+    "description": "Resize and crop images to a specific ratio",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
     "mainScript": "MyScript.js"
 }

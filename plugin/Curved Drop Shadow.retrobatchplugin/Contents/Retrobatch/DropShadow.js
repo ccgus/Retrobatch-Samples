@@ -23,17 +23,7 @@ module.exports = {
     */
     
     
-    workflowStart: function(document, rbnode) {
-        console.log("workflowStart ");
-    },
-    
-    preflightAsset: function(document, rbnode, asset) {
-        console.log("preflightAsset ");
-        return true;
-    },
-    
     processAsset: function(document, rbnode, asset) {
-        console.log("processAsset");
         
         var xOffset = 5;
         var yOffset = 35;
@@ -48,9 +38,7 @@ module.exports = {
         var w = asset.imageWidth() + doubleBorderWidth;
         var h = asset.imageHeight() + imageYOffset + doubleBorderWidth;
         
-        var drawableContext = asset.makeImageAccumulatorOfSize(CGSizeMake(w, h));
-        
-        console.log(drawableContext)
+        var drawableContext = asset.emptyImageAccumulatorOfSize(CGSizeMake(w, h));
         
         drawableContext.lockFocus();
         {

@@ -15,7 +15,7 @@ module.exports = {
             var firstImageWidth = this.lastAsset.imageSize().width;
             var width = firstImageWidth + asset.imageSize().width;
             var height = Math.max(this.lastAsset.imageSize().height, asset.imageSize().height);
-            var acc = this.lastAsset.makeImageAccumulatorOfSize(CGSizeMake(width, height));
+            var acc = this.lastAsset.emptyImageAccumulatorOfSize(CGSizeMake(width, height));
             
             // Let's draw our first image.
             acc.drawCIImage(this.lastAsset.CIImage());

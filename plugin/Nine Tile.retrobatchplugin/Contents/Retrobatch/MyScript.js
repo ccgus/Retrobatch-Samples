@@ -2,8 +2,6 @@ module.exports = {
     
     processAsset: function(document, rbnode, asset) {
         
-        console.log(asset.outputFileName())
-        
         let baseCIImage = asset.CIImage();
         let width = Math.floor(baseCIImage.extent().size.width) / 3.0;
         let height = Math.floor(baseCIImage.extent().size.height) / 3.0;
@@ -23,10 +21,8 @@ module.exports = {
         }
         
         for (var location in locations) {
-            console.log(location)
             
             var rect = locations[location];
-            console.log(NSStringFromRect(rect));
             
             var choppedAsset = asset.copy();
             var choppedImage = baseCIImage.imageByCroppingToRect(rect);

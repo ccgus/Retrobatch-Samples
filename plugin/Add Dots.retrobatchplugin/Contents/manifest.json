@@ -1,6 +1,6 @@
 {
     "pluginName": "Add Random Dots",
-    "description": "Adds random dots to an image.",
+    "description": "This is a example plug-in which adds random colorful dots to an image.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
     "mainScript": "MainScript.js"
 }
