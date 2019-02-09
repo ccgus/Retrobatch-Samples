@@ -16,9 +16,8 @@ module.exports = {
             displayName: "Unit",
             default: "Inches",
             type: "OTAttributeTypePopUp",
-            "kOTInputKeyControllerValues": ["Inches", "Centimeters",],
-            "kOTInputKeyControllerClassName": "OTPopUpInputKeyController",
-                                        
+            inputKeyControllerValues: ["Inches", "Centimeters",],
+            inputKeyControllerClassName: "OTPopUpInputKeyController",
         },
     },
     
