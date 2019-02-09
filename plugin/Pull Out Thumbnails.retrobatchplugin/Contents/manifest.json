@@ -2,5 +2,5 @@
     "pluginName": "Pull Thumbnails",
     "description": "Pulls out thumbnails from an image if present.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
-    "mainScript": "MainScript.js",
+    "mainScript": "MainScript.js"
 }

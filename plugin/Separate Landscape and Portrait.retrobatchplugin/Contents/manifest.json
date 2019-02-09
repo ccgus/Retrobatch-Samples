@@ -2,5 +2,5 @@
     "pluginName": "Filter Landscape & Portrait",
     "description": "Tells Retrobatch to either allow or reject landscape or portrait images.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
-    "mainScript": "MyScript.js",
+    "mainScript": "MyScript.js"
 }

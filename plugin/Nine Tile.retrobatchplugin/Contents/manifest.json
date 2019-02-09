@@ -2,5 +2,5 @@
     "pluginName": "Nine Tile",
     "description": "Split up an image into 9 different tiles.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
-    "mainScript": "MyScript.js",
+    "mainScript": "MyScript.js"
 }

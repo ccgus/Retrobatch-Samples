@@ -2,5 +2,5 @@
     "pluginName": "Curved Drop Shadow",
     "description": "Add a curved drop shadow along with a border to your image.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
-    "mainScript": "DropShadow.js",
+    "mainScript": "DropShadow.js"
 }

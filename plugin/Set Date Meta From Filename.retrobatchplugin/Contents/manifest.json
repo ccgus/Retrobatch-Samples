@@ -2,5 +2,5 @@
     "pluginName": "Set Date Meta From Filename",
     "description": "Set the exif timestamp based on a file name (in the format of 20181218_012026.png).",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
-    "mainScript": "MyScript.js",
+    "mainScript": "MyScript.js"
 }

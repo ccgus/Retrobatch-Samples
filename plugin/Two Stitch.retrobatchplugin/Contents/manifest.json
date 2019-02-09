@@ -2,5 +2,5 @@
     "pluginName": "Two Stitch",
     "description": "Put two images together, side by side.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
-    "mainScript": "MyScript.js",
+    "mainScript": "MyScript.js"
 }
