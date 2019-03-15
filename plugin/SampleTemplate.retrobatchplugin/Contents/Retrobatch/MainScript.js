@@ -33,7 +33,7 @@ module.exports = {
         if (this.assetPassesTest(asset)) {
             
             // We can also draw on our image like so:
-            asset.draw(function () {
+            asset.draw(function (context /*CGContextRef*/) {
                 
                 NSColor.blueColor().set();
                 
