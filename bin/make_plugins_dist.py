@@ -58,6 +58,6 @@ f = open(distDir + "/index.html", "w")
 f.write(finalHTML);
 f.close()
 
-print("scp -r " + distDir + "* gus@flyingmeat.com:~/fmsite/prod/retrobatch/jsplugin/.")
+print("scp -r " + distDir + "* gus@flyingmeat.com:~/fmsite/prod/retrobatch/jsplugin/.; open https://flyingmeat.com/retrobatch/jsplugin")
 
 subprocess.call(["open", distDir + "/index.html"])
