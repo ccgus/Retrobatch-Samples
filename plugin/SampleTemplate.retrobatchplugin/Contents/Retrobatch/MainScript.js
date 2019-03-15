@@ -30,7 +30,23 @@ module.exports = {
     // processAsset is called for every image passed to this node. Return true to continue processing the, or false to not.
     // If you want to change pixels or crop or change metadata in an image, this is the place to do it.
     processAsset: function(document, rbnode, asset) {
-        return this.assetPassesTest(asset);
+        if (this.assetPassesTest(asset)) {
+            
+            // We can also draw on our image like so:
+            asset.draw(function () {
+                
+                NSColor.blueColor().set();
+                
+                var path = NSBezierPath.bezierPathWithRect(asset.imageBounds())
+                path.setLineWidth(30);
+                path.stroke()
+                
+            });
+            
+            return true;
+        }
+        
+        return false;
     },
     
 };
