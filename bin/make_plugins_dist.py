@@ -24,6 +24,7 @@ for i in os.listdir(scriptBase + "/plugin"):
     
     subprocess.call(["ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", fullpath, fulloutpath])
     
+    print("Reading " + fullpath + "/Contents/manifest.json")
     f = open(fullpath + "/Contents/manifest.json")
     j = f.read()
     d = json.loads(j)

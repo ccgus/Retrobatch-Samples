@@ -4,5 +4,5 @@
     "description": "This plugin can be copied and modified to fit your needs.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
     "mainScript": "MainScript.js",
-    "version": 1.0,
+    "version": 1.0
 }
