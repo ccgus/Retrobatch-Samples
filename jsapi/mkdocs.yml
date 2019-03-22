@@ -1,0 +1,10 @@
+site_name: Retrobatch JavaScript API
+
+pages:
+    - Introduction: index.md
+    - Plug-In Basics: pluginanatomy.md
+    - Asset API: assetapi.md
+    
+theme:
+    name: readthedocs
+    custom_dir: rbtheme/
