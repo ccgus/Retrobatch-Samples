@@ -4,7 +4,7 @@ An "asset" in Retrobatch terms is an image or PDF. It could represent bits writt
 
 Below are the public APIs available for plug-in authors when handling image assets.
 
-# imageDataWithFormatOfUTI()
+**imageDataWithFormatOfUTI()**  
 Returns a data object with a representation of the image in the passed format. If you'd like a JPEG, you'd pass 'public.jpeg'. 'public.png' for PNG, 'public.tiff' for TIFF.
 
 Objective-C interface: `- (NSData*)imageDataWithFormatOfUTI:(NSString*)uti`  

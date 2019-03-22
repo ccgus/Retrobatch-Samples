@@ -4,6 +4,7 @@ pages:
     - Introduction: index.md
     - Plug-In Basics: pluginanatomy.md
     - Asset API: assetapi.md
+    - Image Accumulator API: accumulatorapi.md
     
 theme:
     name: readthedocs
