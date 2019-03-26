@@ -13,3 +13,10 @@ You can download a number of [sample plug-ins from our website](https://flyingme
 ### Installing Plug-Ins
 
 Installing a plug-in is easy. Simply download a plug-in, unzip it as necessary, and double click the File.retrobatchplugin. Retrobatch will then offer to install the plug-in for you.
+
+### The JavaScript Cocoa Bridge
+
+While JavaScript is a powerful and expressive language, it doesn't have a whole lot of utility for integrating with MacOS or manipulating images. So we've included a "bridge" in Retrobatch, which allows JavaScript to load up and use classes and function from Apple's [Cocoa](https://developer.apple.com/documentation) and [Core Graphics](https://developer.apple.com/documentation/coregraphics) frameworks. This bridge is named "[FMJS](https://github.com/ccgus/fmjs)".
+
+While JavaScript is a "safe" language, the bridge introduces a number of "unsafe" classes. What this means is, if you want to write a script that deletes all the files in your home folder, you have the power to do this. It also means that if you make a programming error and pass the wrong type of value to a Core Graphics function, Retrobatch is very likely going to crash. So care must be taken when dealing with low level MacOS functions.
+

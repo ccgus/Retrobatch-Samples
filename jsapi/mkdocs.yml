@@ -5,6 +5,9 @@ pages:
     - Plug-In Basics: pluginanatomy.md
     - Asset API: assetapi.md
     - Image Accumulator API: accumulatorapi.md
+    - Document API: documentapi.md
+    - Debugging: debugging.md
+    - JavaScript Node: javascriptnode.md
     
 theme:
     name: readthedocs
