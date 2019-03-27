@@ -8,6 +8,7 @@ pages:
     - Document API: documentapi.md
     - Debugging: debugging.md
     - JavaScript Node: javascriptnode.md
+    - Using Core Image: coreimage.md
     
 theme:
     name: readthedocs
