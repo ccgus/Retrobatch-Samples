@@ -3,6 +3,7 @@
 Apple provides an image processing framework named [Core Image](https://developer.apple.com/documentation/coreimage?language=objc) which you can use from JavaScript to alter the apperance of your image. Using filters from the Core Image framework with Retrobatch is easy (and there are [hundreds of filters](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html) to choose from).
 
 
+## Comic Effects
 Here's an example of one of the easiest filters to use, `CIComicEffect`:
 
 ```javascript
@@ -27,6 +28,8 @@ function processAsset(document, jsnode, asset) {
 }
 ```
 
+
+## Motion Blur
 
 Here is another example, where we perform different operations on the image as well as use a `CIMotionBlur` which takes multiple settings:
 
@@ -62,4 +65,33 @@ function processAsset(document, jsnode, asset) {
     
     return true;
 }
+```
+
+
+## Convolution Kernel
+And finally, here's an example which uses a convolution to create an embossing effect:
+
+
+```javascript
+function processAsset(document, jsnode, asset) {
+        
+    var m = `[1 0 -1
+              2 0 -2
+              1 0 -1]`;
+    
+    var image = asset.CIImage();
+
+    var filter = CIFilter.filterWithName('CIConvolution3X3');
+
+    filter.inputImage = image;
+    filter.inputWeights = CIVector.vectorWithString(m);
+    filter.inputBias = .5;
+    var filteredImage = filter.outputImage();
+    
+    filteredImage = filteredImage.imageByCroppingToRect(image.extent());
+    
+    asset.setCIImage(filteredImage);
+
+}
+
 ```
