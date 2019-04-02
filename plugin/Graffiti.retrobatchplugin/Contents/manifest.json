@@ -1,0 +1,6 @@
+{
+    "pluginName": "Graffiti",
+    "description": "Place random graffiti on your image using Core Graphics as well as Core Image.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "Main.js"
+}

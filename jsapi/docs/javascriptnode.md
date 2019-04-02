@@ -42,10 +42,17 @@ Returning true from the `processAsset` function tells Retrobatch that the image 
 
 You can also use the `preflightAsset` function in a similar way, which will let the Retrobatch nodes know how many images to expect.
 
+
+# A Shared Runtime
+
+Note that if you implement any extra functions beyond the ones listed above, they should be unique to the workflow. For instance, if you have two JavaScript nodes which both implement the funtion `fooBar()`, then the second instance will overwrite the first.
+
+The runtime is also shared between Plug-Ins implemented in JavaScript.
+
+
 # JavaScript Cocoa Bridge
 
 The JavaScript runtime Retrobatch uses allows you to also use any classes from Apple's Cocoa frameworks. This means you can mix together Core Image filters, download data from URLs, or any number of things.
-
 
 
 # Examples
