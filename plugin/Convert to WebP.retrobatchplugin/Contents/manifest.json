@@ -1,0 +1,7 @@
+{
+    "pluginName": "Convert to WebP",
+    "description": "Convert your images to Google's WebP format.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "Main.js",
+    "minimumVersion": "1.2.1"
+}
