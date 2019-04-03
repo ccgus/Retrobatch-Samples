@@ -38,8 +38,9 @@ templateHTML = open(scriptBase + "/bin/make_plugins_dist_template.html").read()
 
 pluginTemplateHTML = """
             <h2>%(pluginName)s</h2>
-            %(description)s<br/>
+            <p>%(description)s</p>
             Download: <a href="%(file)s.zip">%(file)s.zip</a><br/>
+            <span style="color: #888">Requires Retrobatch %(minimumRetrobatchVersion)s+ and MacOS %(minimumSystemVersion)s+</span><br/>
 """
 
 listHTML = ""
@@ -48,6 +49,13 @@ for name in names:
     pluginJSON = pluginInfo[name]
     pluginJSON['pluginName']  = html.escape(pluginJSON['pluginName'])
     pluginJSON['description'] = html.escape(pluginJSON['description'])
+    
+    if pluginJSON.get('minimumRetrobatchVersion') is None:
+            pluginJSON['minimumRetrobatchVersion'] = "1.2.0";
+    
+    if pluginJSON.get('minimumSystemVersion') is None:
+            pluginJSON['minimumSystemVersion'] = "10.12.0";
+    
     
     s = pluginTemplateHTML % pluginJSON
     listHTML = listHTML + s;
