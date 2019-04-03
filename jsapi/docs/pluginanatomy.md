@@ -21,7 +21,9 @@ The manifest.json file lets Retrobatch know what you want to call your plugin, w
     "pluginCategory": "Sample Category",
     "description": "This plugin can be copied and modified to fit your needs.",
     "mainScript": "MainScript.js",
-    "version": 1.0
+    "version": 1.0,
+    "minimumRetrobatchVersion": "1.2.1",
+    "minimumSystemVersion": "10.14.0"
 }
 ```
 
@@ -34,6 +36,11 @@ The manifest.json file lets Retrobatch know what you want to call your plugin, w
 **mainScript** is the name of the file Retrobatch will use to to begin execution of your JavaScript.
 
 **version** is the version number of your plug-in.
+
+**minimumRetrobatchVersion** is the lowest Retrobatch version number that this plug-in requires. (Introduced in Retrobatch 1.2.1).
+
+**minimumSystemVersion** is the lowest MacOS version number that this plug-in requires. (Introduced in Retrobatch 1.2.1).
+
 
 
 # MainScript.js
