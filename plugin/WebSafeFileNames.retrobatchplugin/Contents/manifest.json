@@ -1,7 +1,7 @@
 {
     "pluginName": "Web Safe Names",
     "pluginCategory": "Web",
-    "description": "Rename files so they can safely be used in a web browser.",
+    "description": "Rename files so they can safely be used in a web browser, replacing anything that's not a letter or number to an underscore.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
     "mainScript": "MainScript.js",
     "version": 1.0

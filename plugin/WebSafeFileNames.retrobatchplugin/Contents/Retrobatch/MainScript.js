@@ -3,7 +3,7 @@ module.exports = {
     
     makeWebSafeName: function(badName) {
         // Replace anything that's not a letter or number to an underscore.
-        return badName.replace(/[^a-z0-9]/gi, '_');
+        return badName.replace(/[^a-z0-9\-]/gi, '_');
         
     },
     
