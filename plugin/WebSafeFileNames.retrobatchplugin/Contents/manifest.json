@@ -1,0 +1,8 @@
+{
+    "pluginName": "Web Safe Names",
+    "pluginCategory": "Web",
+    "description": "Rename files so they can safely be used in a web browser.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js",
+    "version": 1.0
+}
