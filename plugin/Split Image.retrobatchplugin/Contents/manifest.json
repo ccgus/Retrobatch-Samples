@@ -1,0 +1,6 @@
+{
+    "pluginName": "Split image",
+    "description": "Slice up an image into multiple parts.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MyScript.js"
+}
