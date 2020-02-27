@@ -1,5 +1,5 @@
 {
-    "pluginName": "Ask For Name and Icrement",
+    "pluginName": "Ask For Name and Increment",
     "pluginCategory": "Web",
     "description": "Prompt for a file name, and then for every image after that add an underscore and the image number.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
