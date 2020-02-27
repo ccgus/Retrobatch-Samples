@@ -3,6 +3,7 @@ site_name: Retrobatch JavaScript API
 pages:
     - Introduction: index.md
     - Plug-In Basics: pluginanatomy.md
+    - JS Expressions: jsexpressions.md
     - Asset API: assetapi.md
     - Image Accumulator API: accumulatorapi.md
     - Document API: documentapi.md

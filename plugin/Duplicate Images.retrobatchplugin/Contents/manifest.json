@@ -1,0 +1,6 @@
+{
+    "pluginName": "Duplicate JS",
+    "description": "This plugin takes a single image, copies it, and sends it on to the next node(s) for each copy.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js"
+}
