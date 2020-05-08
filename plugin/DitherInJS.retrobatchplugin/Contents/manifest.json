@@ -1,0 +1,6 @@
+{
+    "pluginName": "Dither in JS",
+    "description": "An example showing how to do a dither in pure JavaScript. Requires Retrobatch 1.4.2 or later.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "Main.js"
+}

@@ -7,7 +7,7 @@ module.exports = {
         var maxRadius = 100;
         var dotCount = 50;
         var width = asset.imageWidth();
-        var height = asset.imageWidth();
+        var height = asset.imageHeight();
         
         var accumlator = asset.emptyImageAccumulator();
         accumlator.drawCIImage(asset.CIImage());

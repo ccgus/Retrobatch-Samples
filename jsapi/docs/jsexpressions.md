@@ -1,6 +1,6 @@
 ## Using JavaScript Expressions
 
-*Available in Retrobatch Pro 1.3.2 or later.*
+*Available in Retrobatch Pro 1.4 or later.*
 
 Retrobatch Pro now has the option to use a little snippet of JavaScript code to calculate values for nodes which allow you to set the size or length of a value (such as the width or height in the Crop node, or the x/y positions in the Gradient node). Let's say you wanted a border added to your image that was 1/16th of the average between the width and height of your image. You would then use the following snippet: `((w + h) / 2) / 16`
 
