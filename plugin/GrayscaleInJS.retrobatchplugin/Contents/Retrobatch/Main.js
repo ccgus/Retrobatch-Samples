@@ -40,7 +40,7 @@ module.exports = {
         var blueBias = rbnode.nodeValues().inputBlueBias;
         
         // Uint8Array, Uint16Array, or Float32Array are valid values here.
-        var imageAccumulator = asset.drawableImageAccumulatorOfTypedArrayType(Float32Array);
+        var imageAccumulator = asset.drawableImageAccumulatorOfTypedArrayType(Uint8Array);
         var data = imageAccumulator.dataArray();
         
         var w = asset.imageWidth();

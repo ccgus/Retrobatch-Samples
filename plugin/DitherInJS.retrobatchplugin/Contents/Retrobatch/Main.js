@@ -9,7 +9,7 @@ module.exports = {
         
         var w = asset.imageWidth();
         var h = asset.imageHeight()
-        var bytesPerRow = imageAccumulator.bytesPerRow();
+        var rowLength = data.length / h;
         
         // Here's an example for grayscale:
         for (var i = 0; i < data.length; i += 4) {
@@ -24,7 +24,7 @@ module.exports = {
         while (currentY >= 0) {
             var currentX = 0;
             var err = 0;
-            var currentIndex = currentY * bytesPerRow;
+            var currentIndex = currentY * rowLength;
             
             while (currentX < w) {
                 
