@@ -3,8 +3,9 @@ module.exports = {
     
     processAsset: function(document, rbnode, asset) {
         
-        var imageAccumulator = asset.drawableImageAccumulator();
-        var data = imageAccumulator.imageDataAsTypedArray(Uint8Array);
+        // Uint8Array, Uint16Array, or Float32Array are valid values here.
+        var imageAccumulator = asset.drawableImageAccumulatorOfTypedArrayType(Uint8Array);
+        var data = imageAccumulator.dataArray();
         
         var w = asset.imageWidth();
         var h = asset.imageHeight()
