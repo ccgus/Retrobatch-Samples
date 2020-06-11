@@ -1,0 +1,6 @@
+{
+    "pluginName": "Set Original Create and Modified Dates",
+    "description": "The the Finder create and modified dates for the written images based on the original. This node must come after a write node.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MyScript.js"
+}

@@ -1,11 +1,12 @@
 site_name: Retrobatch JavaScript API
 
-pages:
+nav:
     - Introduction: index.md
     - Plug-In Basics: pluginanatomy.md
     - JS Expressions: jsexpressions.md
     - Asset API: assetapi.md
     - Image Accumulator API: accumulatorapi.md
+    - Pixel Access: jstypedarrays.md
     - Document API: documentapi.md
     - Debugging: debugging.md
     - JavaScript Node: javascriptnode.md
@@ -13,4 +14,4 @@ pages:
     
 theme:
     name: readthedocs
-    custom_dir: rbtheme/
+#    custom_dir: rbtheme/

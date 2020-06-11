@@ -80,4 +80,12 @@ End NS drawing to the accumulator.
 
 Objective-C interface: `- (FMPLUGIN_API void)unlockFocus`  
 
+**imageDataAsTypedArray(arrayType)**  
+Gain access to an accumulator's API as a JavaScript typed array. For example, you would use the following call to get a typed array as 8 bit components:  
+`var data = imageAccumulator.imageDataAsTypedArray(Uint8Array);`
+
+
+**bytesPerRow()**  
+Returns the bytes per row for the image accumulator.
+
 
