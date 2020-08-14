@@ -1,0 +1,6 @@
+{
+    "pluginName": "Cumulative Rotate JS",
+    "description": "Rotate an image by an amount that increments with each image that passes through.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js"
+}
