@@ -1,0 +1,6 @@
+{
+    "pluginName": "Quit Retrobatch",
+    "description": "A node that quits Retrobatch, which you might find useful for use with Droplets. Requires Retrobatch 1.4.3 or later.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js"
+}
