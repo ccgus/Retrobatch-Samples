@@ -1,0 +1,8 @@
+{
+    "pluginName": "Set App Icon",
+    "pluginCategory": "Misc",
+    "description": "Given an image with a file name the same as an application bundle id, this plugin will look up the app and set a custom icon for it. For example, if you pass along an image named 'com.flyingmeat.Retrobatch.png', the image will used as a custom icon for Retrobatch.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js",
+    "version": 1.0
+}
