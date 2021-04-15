@@ -1,0 +1,6 @@
+{
+    "pluginName": "Fuzzy Date Set",
+    "description": "This is an example plugin that will set the metadata date information in an image based off the file name.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js"
+}
