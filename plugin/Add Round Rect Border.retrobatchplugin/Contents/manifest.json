@@ -1,0 +1,6 @@
+{
+    "pluginName": "Add Round Rect Border",
+    "description": "This is a example plug-in which adds a border to an image, with rounded corners.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js"
+}
