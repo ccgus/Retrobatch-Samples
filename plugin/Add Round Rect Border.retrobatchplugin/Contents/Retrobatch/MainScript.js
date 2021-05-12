@@ -1,7 +1,7 @@
 module.exports = {
     
     
-    inputKeys: ["inputCornerRadius", "inputBorderColor"],
+    inputKeys: ["inputCornerRadius", "inputStrokeWidth", "inputBorderColor"],
     
     attributes: {
         "inputCornerRadius": {
@@ -10,6 +10,14 @@ module.exports = {
             sliderMin: 0.00,
             sliderMax: 100.00,
             default: 10,
+            type: kCIAttributeTypeScalar,
+        },
+        "inputStrokeWidth": {
+            displayName: "Stroke Width",
+            min: 0.00,
+            sliderMin: 0.00,
+            sliderMax: 100.00,
+            default: 1,
             type: kCIAttributeTypeScalar,
         },
         
@@ -24,7 +32,8 @@ module.exports = {
     processAsset: function(document, rbnode, asset) {
         
         var radius = rbnode.nodeValues().inputCornerRadius;
-        var hRadius = radius / 2;
+        var strokeWidth = rbnode.nodeValues().inputStrokeWidth;
+        var hstrokeWidth = strokeWidth / 2;
         var width = asset.imageWidth();
         var height = asset.imageHeight();
         
@@ -32,10 +41,10 @@ module.exports = {
         accumlator.drawCIImage(asset.CIImage());
         accumlator.lockFocus();
         
-        var bounds = CGRectMake(hRadius, hRadius, width - radius, height - radius);
+        var bounds = CGRectMake(hstrokeWidth, hstrokeWidth, width - strokeWidth, height - strokeWidth);
         var path = NSBezierPath.bezierPathWithRoundedRect_xRadius_yRadius_(bounds, radius, radius);
         
-        path.setLineWidth(radius);
+        path.setLineWidth(strokeWidth);
         
         NSColor.colorWithCIColor(rbnode.nodeValues().inputBorderColor).set();
         
