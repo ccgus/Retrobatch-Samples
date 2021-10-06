@@ -1,0 +1,6 @@
+{
+    "pluginName": "Fixed Width Multi-scale",
+    "description": "Resize an image multiple times to a fixed width. The value of the width is stored in $userValue.multiScaleValue$",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MyScript.js"
+}
