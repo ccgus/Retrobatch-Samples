@@ -29,6 +29,17 @@ module.exports = {
             w = widthsArray[idx];
             w = w.trim();
             
+            var name = null;
+            
+            var nsplit = w.split(" ");
+            
+            if (nsplit.length > 1) {
+                w = nsplit[0];
+                name = nsplit[1].trim();
+            }
+            
+            w = w.trim();
+            
             var targetWidth = parseInt(w);
             if (targetWidth < 1) {
                 console.log("Bad width given: " + targetWidth);
@@ -49,9 +60,13 @@ module.exports = {
             
             scaledAsset.setCIImage(image)
             
-            // scaledAsset.setOutputFileName(w + " - " + asset.outputFileName())
+            if (name) {
+                scaledAsset.setOutputFileName(name);
+            }
             
-            scaledAsset.setUserValue_forKey(w, "multiScaleValue"); // Store what we scaled for use in the write node $userValue.multiScaleValue$
+            // scaledAsset.setUserValue_forKey(w, "multiScaleValue"); // Store what we scaled for use in the write node $userValue.multiScaleValue$
+            // Or you know, just use the "Image Width" token. Still, I'll keep this code here as an exampe where you can store something from
+            // a JS plugin, and reference it in the write node.
             
             rbnode.continueWithAsset(scaledAsset);
             
