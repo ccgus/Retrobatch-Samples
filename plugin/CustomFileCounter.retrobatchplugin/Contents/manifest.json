@@ -1,0 +1,8 @@
+{
+    "pluginName": "Custom File Counter",
+    "pluginCategory": "Plug-In",
+    "description": "Counts the images coming through and assigns that value to a custom meta field which can be used down the node chain.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js",
+    "version": 1.0
+}
