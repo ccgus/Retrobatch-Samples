@@ -2,5 +2,6 @@
     "pluginName": "Write as TGA",
     "description": "This is a example plug-in which writes out images as TGA files.",
     "updateURL": "http://flyingmeat.com/sample/foo.rss",
-    "mainScript": "MainScript.js"
+    "mainScript": "MainScript.js",
+    "minimumSystemVersion": "11.0"
 }
