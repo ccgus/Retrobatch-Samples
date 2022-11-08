@@ -29,8 +29,6 @@ module.exports = {
             }
         }
         
-        console.log(properties)
-        
         var data = NSMutableData.data();
         var imageDestination = CGImageDestinationCreateWithData(data, "com.truevision.tga-image", 1, properties);
         
