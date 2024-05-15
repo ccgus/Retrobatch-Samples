@@ -1,0 +1,8 @@
+{
+    "pluginName": "Crop to Aspect Ratio",
+    "pluginCategory": "Transform",
+    "description": "This plugin will crop an image to a given aspect ratio.",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js",
+    "version": 1.0
+}
