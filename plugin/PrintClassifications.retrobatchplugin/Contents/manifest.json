@@ -1,0 +1,8 @@
+{
+    "pluginName": "Print Classifications",
+    "description": "This is a plug-in which prints out to the JavaScript console, the first 10 classifications of an image. This node is to be used after the Classify Images node. Requires Retrobatch 2.2.2",
+    "updateURL": "http://flyingmeat.com/sample/foo.rss",
+    "mainScript": "MainScript.js",
+    "minimumSystemVersion": "11.0",
+    "minimumRetrobatchVersion": "2.2.2"
+}
