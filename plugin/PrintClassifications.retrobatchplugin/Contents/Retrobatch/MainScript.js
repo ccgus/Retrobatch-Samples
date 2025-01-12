@@ -2,13 +2,13 @@ module.exports = {
     
     inputKeys: ["inputWriteToFileURL"],
     
-    classifications: "",
+    jsonList: [],
     
     attributes: {
         "inputWriteToFileURL": {
             type: RBAttributeTypeFileURL,
             displayName: "File",
-            allowedSavePanelTypes: ["public.plain-text"]
+            allowedSavePanelTypes: ["public.json"]
         }
     },
     
@@ -17,22 +17,21 @@ module.exports = {
         
         var name = asset.outputFileName();
         
-        this.classifications = this.classifications + name + ":\n"
-        
         console.log(name + " ----------------");
         
         let ar = asset.topClassifications(10);
         
         ar.forEach(item => {
             console.log("    " + item.identifier + ": " + item.confidence);
-            this.classifications = this.classifications + "    " + item.identifier + ": " + item.confidence + "\n";
         });
+        
+        this.jsonList.push({fileName: name, classifications: ar})
         
         return true;
     },
     
     workflowStart: function(document, rbnode, context) {
-        this.classifications = ""
+        this.jsonList = []
     },
     
     workflowEnd: function(document, rbnode, context) {
@@ -44,7 +43,7 @@ module.exports = {
             return false;
         }
         
-        var data = NSString.stringWithString(this.classifications).dataUsingEncoding(NSUTF8StringEncoding);
+        var data = NSString.stringWithString(JSON.stringify(this.jsonList, null, 2)).dataUsingEncoding(NSUTF8StringEncoding);
         
         if (!data.writeToURL_atomically(fileURL, true)) {
             console.log("Could not write to " + fileURL);
